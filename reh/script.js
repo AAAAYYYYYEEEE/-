@@ -110,17 +110,12 @@ window.addEventListener('load', function() {
   }, 500);
 });
 
-// Остальной JS (бургер, модалка, звёздочки) остаётся как есть
-
-
-
-
 // Карусель отзывов
 let currentReview = 0;
 const totalReviews = 3; // 3 отзыва
 
 function showReview(index) {
-  // Убираем active у всех
+ 
   document.querySelectorAll('.review-card').forEach(card => {
     card.classList.remove('active');
   });
@@ -128,7 +123,7 @@ function showReview(index) {
     dot.classList.remove('active');
   });
   
-  // Добавляем active текущему
+ 
   document.querySelectorAll('.review-card')[index].classList.add('active');
   document.querySelectorAll('.dot')[index].classList.add('active');
   
@@ -166,7 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('load', function() {
   const preloader = document.getElementById('preloader');
   
-  // Задержка 3.5 секунды для вау-эффекта
+  // Задержка 3.5 секунды
   setTimeout(() => {
     preloader.classList.add('fade-out');
     

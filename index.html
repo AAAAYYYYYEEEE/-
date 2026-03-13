@@ -16,6 +16,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+<!-- 🍪 КУКИ БАННЕР -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <i class="fas fa-cookie-bite"></i>
+    <div class="cookie-text">
+      <strong>Мы используем cookies</strong>
+      <span>для улучшения работы сайта и аналитики. <a href="privacy.html">Подробнее</a></span>
+    </div>
+    <div class="cookie-buttons">
+      <button id="cookie-accept" class="cookie-btn accept">Принять</button>
+      <button id="cookie-decline" class="cookie-btn decline">Отклонить</button>
+    </div>
+  </div>
+</div>
+
 <body>
 
 <!-- PRELOADER — В НАЧАЛЕ <body> -->
@@ -60,6 +75,7 @@
       <li><a href="#reviews"><i class="fas fa-star"></i> Отзывы</a></li>
       <li><a href="#gallery"><i class="fas fa-images"></i> Галерея</a></li>
       <li><a href="#menu"><i class="fas fa-utensils"></i> Меню</a></li>
+      <li><a href="#prices">Дегустации</a></li>
       <li><a href="#about"><i class="fas fa-info-circle"></i> О нас</a></li>
       <li><a href="#" onclick="openBookingModal(); return false;"><i class="fas fa-calendar-check"></i> Забронировать</a></li>
       <li><a href="#contacts"><i class="fas fa-map-marker-alt"></i> Контакты</a></li>
@@ -213,6 +229,57 @@
   </div>
 </section>
 
+<section id="prices" class="prices-section">
+  <div class="container">
+    <h2> Дегустации</h2>
+    <p class="section-subtitle">Дегустационные сеты премиум-класса</p>
+    
+    <div class="prices-grid">
+      <!-- ВИСКИ -->
+      <div class="price-card">
+        <div class="card-icon"></div>
+        <h3>Виски Дегустация</h3>
+        <div class="price">5 000 ₽</div>
+        <ul>
+          <li>3 вида односолодового виски</li>
+          <li>Селекция 12-18 лет выдержки</li>
+          <li>Специальные закуски</li>
+          <li>Сомелье-консультант</li>
+        </ul>
+        <button class="cta-btn">Забронировать</button>
+      </div>
+
+      <!-- КОНЬЯК -->
+      <div class="price-card popular">
+        <div class="popular-badge">Популярно</div>
+        <div class="card-icon"></div>
+        <h3>Коньяк Премиум</h3>
+        <div class="price">7 500 ₽</div>
+        <ul>
+          <li>4 вида французских коньяков</li>
+          <li>VSOP / XO коллекция</li>
+          <li>Сыры и трюфели</li>
+          <li>Приватный сомелье</li>
+        </ul>
+        <button class="cta-btn">Забронировать</button>
+      </div>
+
+      <!-- ТЕКИЛА -->
+      <div class="price-card">
+        <div class="card-icon"></div>
+        <h3>Текила Фест</h3>
+        <div class="price">4 500 ₽</div>
+        <ul>
+          <li>3 вида мексиканской текилы</li>
+          <li>Автентичные закуски</li>
+          <li>Лимон + соль + шоу-подача</li>
+          <li>Мексиканская музыка</li>
+        </ul>
+        <button class="cta-btn">Забронировать</button>
+      </div>
+    </div>
+  </div>
+</section>
 
   
   <!-- РАБОТАЮЩАЯ КАРТА ЯНДЕКС -->

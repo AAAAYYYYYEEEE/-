@@ -438,6 +438,58 @@
     </div>
   </div>
 </div>
+<!-- МОДАЛКА АВТОРИЗАЦИИ/РЕГИСТРАЦИИ -->
+<div id="authModal" class="modal-overlay">
+  <div class="modal-content auth-modal">
+    <div class="modal-header">
+      <h3><i class="fas fa-user-circle"></i> <span id="authModalTitle">Вход</span></h3>
+      <span class="modal-close" onclick="closeAuthModal()">&times;</span>
+    </div>
+    
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchAuthTab('login')">Вход</button>
+      <button class="auth-tab" onclick="switchAuthTab('register')">Регистрация</button>
+    </div>
+    
+    <!-- ФОРМА ВХОДА -->
+    <form id="loginForm" class="auth-form active">
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="loginEmail" placeholder="example@mail.com" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Пароль</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" required>
+      </div>
+      <button type="submit" class="btn-booking w-100">Войти</button>
+    </form>
+    
+    <!-- ФОРМА РЕГИСТРАЦИИ -->
+    <form id="registerForm" class="auth-form">
+      <div class="form-group">
+        <label><i class="fas fa-user"></i> Имя</label>
+        <input type="text" id="regName" placeholder="Ваше имя" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-envelope"></i> Email</label>
+        <input type="email" id="regEmail" placeholder="example@mail.com" required>
+      </div>
+      <div class="form-group">
+        <label><i class="fas fa-lock"></i> Пароль</label>
+        <input type="password" id="regPassword" placeholder="минимум 6 символов" required>
+      </div>
+      <button type="submit" class="btn-booking w-100">Зарегистрироваться</button>
+    </form>
+    
+    <div class="auth-status" id="authStatus"></div>
+  </div>
+</div>
+
+<!-- Уведомление для неавторизованных -->
+<div id="authRequiredToast" class="toast-notification">
+  <i class="fas fa-exclamation-circle"></i>
+  <span>⭐ Чтобы оценить блюдо, войдите в аккаунт</span>
+</div>
 <!-- FOOTER -->
 <footer class="footer">
   <div class="footer-content">
